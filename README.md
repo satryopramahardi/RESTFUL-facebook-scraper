@@ -17,9 +17,10 @@ Server menerima perintah lalu melakukan *automated browsing* menggunakan seleniu
 | GET | http://[localhost]/fb-api/logout | Menghapus cookie yang tersimpan |
 | POST | http://[localhost]/fb-api/find-user?u=\<masukkan nama\> | Cari profil facebook atas nama orang tersebut |
   
- Pengetesan dilakukan dengan curl melalui cmd. 
+ Pengetesan dilakukan dengan curl melalui comand prompt dengan perintah berikut ini:
  Untuk login gunakan 
 ``` curl -i http://127.0.0.1:5000/fb-api/login -d "email=\<email anda\>" -d "password=\<password anda\>"```
+
  Untuk mencari profil gunakan 
 ``` curl -i http://127.0.0.1:5000/fb-api/login -d "u=\<nama yang hendak dicari\>"```
 

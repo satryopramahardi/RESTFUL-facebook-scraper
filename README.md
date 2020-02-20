@@ -14,9 +14,11 @@ Server menerima perintah lalu melakukan *automated browsing* menggunakan seleniu
 |--------|-------|-------|
 | GET | http://[localhost]/fb-api/login | Melakukan pengecekan apakah ada cookie tersimpan dan mengembalikan login atas username siapa |
 | POST | http://[localhost]/fb-api/login?email=\<email anda\>&password=\<password anda\> | Login ke profil facebook anda |
-| GET | http://[localhost]/fb-api/logout | Menghapus cookie yang tersimpan |
+| GET | http://[localhost]/fb-api/logout | Logout dan menghapus cookie yang tersimpan |
 | POST | http://[localhost]/fb-api/find-user?u=\<masukkan nama\> | Cari profil facebook atas nama orang tersebut |
-  
+
+Untuk mencari profil, diharuskan memasukkan informasi login terlebih dahulu. Bila server mengembalikan ```{'message':"need login"}``` meskipun anda sudah login, silahkan mencoba restart app server atau lakukan logout/login.
+
  Pengetesan dilakukan dengan curl melalui comand prompt dengan perintah berikut ini:
  Untuk login gunakan 
 ``` curl -i http://127.0.0.1:5000/fb-api/login -d "email=\<email anda\>" -d "password=\<password anda\>"```

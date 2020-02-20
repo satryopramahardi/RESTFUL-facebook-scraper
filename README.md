@@ -9,7 +9,7 @@ Server menerima perintah lalu melakukan *automated browsing* menggunakan seleniu
 
 |HTTP Method| Alamat | Keterangan |
 |--------|-------|-------|
-| GET | http://[localhost]/fb-api/login | Melakukan pengecekan apakah ada cookie tersimpan dan me-return login atas username siapa |
+| GET | http://[localhost]/fb-api/login | Melakukan pengecekan apakah ada cookie tersimpan dan mengembalikan login atas username siapa |
 | POST | http://[localhost]/fb-api/login?email=\<email anda\>&password=\<password anda\> | Login ke profil facebook anda |
 | GET | http://[localhost]/fb-api/logout | Menghapus cookie yang tersimpan |
 | POST | http://[localhost]/fb-api/find-user?u=\<masukkan nama\> | Cari profil facebook atas nama orang tersebut |

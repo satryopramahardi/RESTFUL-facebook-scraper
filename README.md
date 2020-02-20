@@ -1,10 +1,27 @@
 # RESTFUL-facebook-scraper
 Server API untuk *scraping* data facebook. Server ini membutuhkan chrome, flas, flask-restful, dan selenium pada server.
 
-Server menerima perintah lalu melakukan *automated browsing* menggunakan selenium. Membutuhkan input email dan password facebook untuk melakukan *scraping* pada profil teman. 
-
 ## Disclaimer ##
 > PENULIS KODE BELUM MEMPERTIMBANGKAN KEAMANAN DAN LEGALITAS DARI PERILAKU SCRAPING. SERVER MEMBUTUHKAN EMAIL DAN PASSWORD ANDA. MESKIPUN PENULIS KODE TIDAK MEMILIKI NIAT UNTUK MENCURI DATA, PENULIS KODE TIDAK BISA MENJAMIN KEAMANAN DATA LOGIN ANDA. SANGAT DISARANKAN LOGIN DENGAN AKUN DUMMY. **USE AT YOUR OWN RISK, FOR EDUCATIONAL PURPOSE ONLY**
+
+Server menerima perintah lalu melakukan *automated browsing* menggunakan selenium. Membutuhkan input email dan password facebook untuk melakukan *scraping* pada profil teman. Hasil scraping akan mengembalikan data json yang berisi 
+- Nama Lengkap
+- User ID
+- Photo Profil
+- Cover Image
+- Biografi
+- Relationship
+- Tanggal Lahir
+- Jumlah Teman
+
+Beberapa post terakhir yang ada di halaman utama profil dengan detail:
+- Post Text
+- Post Date
+- Post Url
+- Jumlah Reaction
+- Komentar Post
+
+Hasil pencarian juga disimpan dalam file db,csv, dan json di direktori server.
 
 ### Mulai server dengan menjalankan *serve-api-fb.py*
 

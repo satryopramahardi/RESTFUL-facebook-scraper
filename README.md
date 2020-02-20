@@ -3,7 +3,7 @@ Server API untuk *scraping* data facebook. Server ini membutuhkan chrome, flas, 
 
 Server menerima perintah lalu melakukan *automated browsing* menggunakan selenium. Membutuhkan input email dan password facebook untuk melakukan *scraping* pada profil teman. 
 
-DISCLAIMER: **PENULIS KODE BELUM MEMPERTIMBANGKAN KEAMANAN DAN LEGALITAS DARI PERILAKU SCRAPING. USE AT YOUR OWN RISK, FOR EDUCATIONAL PURPOSE ONLY**
+Disclaimer: PENULIS KODE BELUM MEMPERTIMBANGKAN KEAMANAN DAN LEGALITAS DARI PERILAKU SCRAPING. SERVER MEMBUTUHKAN EMAIL DAN PASSWORD ANDA. MESKIPUN PENULIS KODE TIDAK MEMILIKI NIAT UNTUK MENCURI DATA, PENULIS KODE TIDAK BISA MENJAMIN KEAMANAN DATA LOGIN ANDA. **USE AT YOUR OWN RISK, FOR EDUCATIONAL PURPOSE ONLY**
 
 ### Mulai server dengan menjalankan *serve-api-fb.py*
 
